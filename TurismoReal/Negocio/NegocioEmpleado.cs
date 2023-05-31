@@ -22,6 +22,84 @@ namespace TurismoReal.Negocio
             db = new ModelContext();
             conn = (OracleConnection)db.Database.GetDbConnection();
         }
+        public void InsertEmp(Empleado emp)
+        {
+            try
+            {
+                conn.Open();
+                string query = "SP_Emp_Mant";
+                OracleCommand oracleCommand = new OracleCommand(query, conn);
+                oracleCommand.CommandType = CommandType.StoredProcedure;
+                //Parametros
+                oracleCommand.Parameters.Add("@vat", null);
+                oracleCommand.Parameters.Add("@nombre_emp", emp.NombreEmp);
+                oracleCommand.Parameters.Add("@apaterno_emp", emp.ApatenoEmp);
+                oracleCommand.Parameters.Add("@amaterno_emp", emp.AmaternoEmp);
+                oracleCommand.Parameters.Add("@telefono", emp.Telefono);
+                oracleCommand.Parameters.Add("@id_tipo_emp_id", emp.IdTipoEmpNavigation);
+                oracleCommand.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                string message = ex.ToString();
+                string title = "Error";
+                MessageBox.Show(message, title);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+        public void UpdateEmp(Empleado emp)
+        {
+            try
+            {
+                conn.Open();
+                string query = "SP_Deptos_update";
+                OracleCommand oracleCommand = new OracleCommand(query, conn);
+                oracleCommand.CommandType = CommandType.StoredProcedure;
+                //Parametros
+                oracleCommand.Parameters.Add("@nombre_emp", emp.NombreEmp);
+                oracleCommand.Parameters.Add("@apaterno_emp", emp.ApatenoEmp);
+                oracleCommand.Parameters.Add("@amaterno_emp", emp.AmaternoEmp);
+                oracleCommand.Parameters.Add("@telefono", emp.Telefono);
+                oracleCommand.Parameters.Add("@id_tipo_emp_id", emp.IdTipoEmpNavigation);
+                oracleCommand.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                string message = ex.ToString();
+                string title = "Error";
+                MessageBox.Show(message, title);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+        public void DeleteEmp(Empleado emp)
+        {
+            try
+            {
+                conn.Open();
+                string query = "SP_Emp_delete";
+                OracleCommand oracleCommand = new OracleCommand(query, conn);
+                oracleCommand.CommandType = CommandType.StoredProcedure;
+                //Parametros
+                oracleCommand.Parameters.Add("@id_emp", emp.IdEmp);
+                oracleCommand.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                string message = ex.ToString();
+                string title = "Error";
+                MessageBox.Show(message, title);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
         public DataTable GetCursor()
         {
             DataTable dt = new DataTable();
@@ -47,7 +125,7 @@ namespace TurismoReal.Negocio
                 string title = "Error";
                 MessageBox.Show(message, title);
             }
-            finally 
+            finally
             {
                 conn.Close();
             }
