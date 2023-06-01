@@ -17,7 +17,7 @@ namespace TurismoReal.Negocio
         ModelContext db;
         OracleConnection conn;
 
-        public void Empleado()
+        public NegocioEmpleado()
         {
             db = new ModelContext();
             conn = (OracleConnection)db.Database.GetDbConnection();

@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TurismoReal.Datos;
+using TurismoReal.Negocio;
 
 namespace TurismoReal.Vistas
 {
@@ -19,9 +21,35 @@ namespace TurismoReal.Vistas
     /// </summary>
     public partial class CrearCliente : Window
     {
+        NegocioCliente nc;
         public CrearCliente()
         {
             InitializeComponent();
+            nc = new NegocioCliente();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Cliente cliente = new Cliente();
+            cliente.Vat = rut.Text;
+            cliente.NombreCli = nombre.Text;
+            cliente.ApaternoCli = apaterno.Text;
+            cliente.AmaternoCli= amaterno.Text;
+            cliente.Telefono = telefono.Text;
+            cliente.Email = email.Text;
+            cliente.Clave = clave.Password;
+            cliente.SexoCli = sexo.Text;
+            nc.InsertCliente(cliente);
+        }
+
+        private void edad_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

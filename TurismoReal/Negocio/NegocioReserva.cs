@@ -10,12 +10,12 @@ using Oracle.ManagedDataAccess.Types;
 
 namespace TurismoReal.Negocio
 {
-    internal class NegocioReserva
+    class NegocioReserva
     {
         ModelContext db;
         OracleConnection conn;
 
-        public void Arriendos()
+        public NegocioReserva()
         {
             db = new ModelContext();
             conn = (OracleConnection)db.Database.GetDbConnection();

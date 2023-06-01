@@ -7,6 +7,25 @@
         mc:Ignorable="d"
         Title="CrearCliente" Height="450" Width="800">
     <Grid>
-        
+        <Button Content="Atras" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"  Height="34" Width="99" Click="Button_Click_1"/>
+        <TextBox x:Name="rut" HorizontalAlignment="Left" Margin="89,75,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="149" Height="30"/>
+        <TextBox x:Name="nombre" HorizontalAlignment="Left" Margin="89,133,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="149" Height="30"/>
+        <TextBox x:Name="apaterno" HorizontalAlignment="Left" Margin="89,187,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="149" Height="30"/>
+        <TextBox x:Name="amaterno" HorizontalAlignment="Left" Margin="89,246,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="149" Height="30"/>
+        <TextBox x:Name="telefono" HorizontalAlignment="Left" Margin="280,75,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="149" Height="30"/>
+        <TextBox x:Name="sexo" HorizontalAlignment="Left" Margin="477,72,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="149" Height="30"/>
+        <TextBox x:Name="edad" HorizontalAlignment="Left" Margin="477,133,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="149" Height="30" TextChanged="edad_TextChanged"/>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Margin="280,133,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="149" Height="30"/>
+        <Button Content="Agregar" HorizontalAlignment="Left" Margin="175,312,0,0" VerticalAlignment="Top"  Height="48" Width="190" Click="Button_Click"/>
+        <Label Content="nombre" HorizontalAlignment="Left" Margin="89,107,0,0" VerticalAlignment="Top" Height="26" Width="149"/>
+        <Label Content="rut" HorizontalAlignment="Left" Margin="89,49,0,0" VerticalAlignment="Top" Height="26" Width="149"/>
+        <Label Content="apellido Paterno" HorizontalAlignment="Left" Margin="89,222,0,0" VerticalAlignment="Top" Height="26" Width="149"/>
+        <Label Content="apellido Materno" HorizontalAlignment="Left" Margin="89,163,0,0" VerticalAlignment="Top" Height="26" Width="149"/>
+        <Label Content="Sexo" HorizontalAlignment="Left" Margin="477,49,0,0" VerticalAlignment="Top" Height="26" Width="149" RenderTransformOrigin="0.264,0.528"/>
+        <Label Content="Edad" HorizontalAlignment="Left" Margin="477,107,0,0" VerticalAlignment="Top" Height="26" Width="149"/>
+        <Label Content="telefono" HorizontalAlignment="Left" Margin="280,49,0,0" VerticalAlignment="Top" Height="26" Width="149"/>
+        <Label Content="email" HorizontalAlignment="Left" Margin="280,107,0,0" VerticalAlignment="Top" Height="26" Width="149"/>
+        <Label Content="clave" HorizontalAlignment="Left" Margin="280,163,0,0" VerticalAlignment="Top" Height="26" Width="149"/>
+        <PasswordBox Name="clave" HorizontalAlignment="Left" Margin="280,187,0,0" VerticalAlignment="Top" Width="149" Height="30"/>
     </Grid>
 </Window>

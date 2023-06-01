@@ -10,6 +10,7 @@ using Oracle.ManagedDataAccess.Client;
 using Oracle.ManagedDataAccess.Types;
 using System.Data;
 using System.Windows;
+using TurismoReal.Vistas;
 
 namespace TurismoReal.Negocio
 {
@@ -17,17 +18,17 @@ namespace TurismoReal.Negocio
     {
         ModelContext db;
         OracleConnection conn;
-        public void Cliente()
+        public NegocioCliente()
         {
             db = new ModelContext();
             conn = (OracleConnection)db.Database.GetDbConnection();
         }
         public void InsertCliente(Cliente cliente)
         {
+            string query = "SP_Clientes_Mant";
             try
             {
                 conn.Open();
-                string query = "SP_Clientes_Mant";
                 OracleCommand oracleCommand = new OracleCommand(query, conn);
                 oracleCommand.CommandType = CommandType.StoredProcedure;
                 //Parametros
@@ -111,10 +112,10 @@ namespace TurismoReal.Negocio
         public DataTable GetCursor()
         {
             DataTable dt = new DataTable();
+            string query = "SP_Cliente_List";
             try
             {
                 conn.Open();
-                string query = "SP_Cliente_List";
                 OracleCommand oracleCommand = new OracleCommand(query, conn);
                 oracleCommand.CommandType = CommandType.StoredProcedure;
                 OracleParameter param1 = oracleCommand.Parameters.Add("cursor_cli", OracleDbType.RefCursor);

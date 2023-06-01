@@ -16,42 +16,25 @@ public partial class ModelContext : DbContext
     }
 
     public virtual DbSet<Acompanante> Acompanantes { get; set; }
-
     public virtual DbSet<Arriendo> Arriendos { get; set; }
-
     public virtual DbSet<Ciudad> Ciudads { get; set; }
-
     public virtual DbSet<Cliente> Clientes { get; set; }
-
     public virtual DbSet<Comuna> Comunas { get; set; }
-
     public virtual DbSet<Departamento> Departamentos { get; set; }
-
     public virtual DbSet<Documento> Documentos { get; set; }
-
     public virtual DbSet<Edificio> Edificios { get; set; }
-
     public virtual DbSet<Empleado> Empleados { get; set; }
-
     public virtual DbSet<FormaPago> FormaPagos { get; set; }
-
     public virtual DbSet<Pago> Pagos { get; set; }
-
     public virtual DbSet<Servicio> Servicios { get; set; }
-
     public virtual DbSet<TipoCompaniaServicio> TipoCompaniaServicios { get; set; }
-
     public virtual DbSet<TipoVat> TipoVats { get; set; }
-
     public virtual DbSet<Tipoempleado> Tipoempleados { get; set; }
-
     public virtual DbSet<Transporte> Transportes { get; set; }
-
     public virtual DbSet<Vehiculo> Vehiculos { get; set; }
-
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseOracle("User Id=c##deptos ;Password=dbadmin23;Data Source=localhost:1521/xe;");
+        => optionsBuilder.UseOracle("User Id=c##deptos ;Password=dbadmin23;Data Source=localhost:1521/XE; persist security info=false;Connection Timeout=120;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

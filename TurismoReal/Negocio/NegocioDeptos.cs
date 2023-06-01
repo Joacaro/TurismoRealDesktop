@@ -12,12 +12,12 @@ using TurismoReal.Datos;
 
 namespace TurismoReal.Negocio
 {
-    internal class NegocioDeptos
+    class NegocioDeptos
     {
         ModelContext db;
         OracleConnection conn;
 
-        public void Deptos()
+        public NegocioDeptos()
         {
             db = new ModelContext();
             conn = (OracleConnection)db.Database.GetDbConnection();
