@@ -22,20 +22,19 @@ namespace TurismoReal
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public delegate void EventoCrear();
+    public delegate void EventoListar();
     public partial class MainWindow : Window
     {
         public event EventoCrear LoadCrear;
+        public event EventoListar ListarCliente;
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, EventArgs e)
         {
-            Window ventana = null;
-            ventana = new ListarCliente();
-            ventana.Show();
-            this.Close();
+            ListarCliente.Invoke();
         }
 
         private void Button_Click_1(object sender, EventArgs e)

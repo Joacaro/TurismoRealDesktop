@@ -35,16 +35,7 @@ namespace TurismoReal.Vistas
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Cliente cliente = new Cliente();
-            cliente.Vat = rut.Text;
-            cliente.NombreCli = nombre.Text;
-            cliente.ApaternoCli = apaterno.Text;
-            cliente.AmaternoCli= amaterno.Text;
-            cliente.Telefono = telefono.Text;
-            cliente.Email = email.Text;
-            cliente.Clave = clave.Password;
-            cliente.SexoCli = sexo.Text;
-            nc.InsertCliente(cliente);
+
         }
 
         private void edad_TextChanged(object sender, TextChangedEventArgs e)
