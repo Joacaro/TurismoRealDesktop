@@ -112,10 +112,10 @@ namespace TurismoReal.Negocio
         public DataTable GetCursor()
         {
             DataTable dt = new DataTable();
-            string query = "SP_Cliente_List";
             try
             {
                 conn.Open();
+                string query = "SP_Cliente_List";
                 OracleCommand oracleCommand = new OracleCommand(query, conn);
                 oracleCommand.CommandType = CommandType.StoredProcedure;
                 OracleParameter param1 = oracleCommand.Parameters.Add("cursor_cli", OracleDbType.RefCursor);

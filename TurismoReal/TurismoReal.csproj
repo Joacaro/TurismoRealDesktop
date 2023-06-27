@@ -10,13 +10,18 @@
   <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.4.4" />
     <PackageReference Include="MahApps.Metro" Version="2.4.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Oracle.EntityFrameworkCore" Version="7.21.9" />
-    <PackageReference Include="Oracle.ManagedDataAccess" Version="21.10.0" />
-    <PackageReference Include="Oracle.ManagedDataAccess.EntityFramework" Version="21.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>..\..\..\..\Desktop\Titulo\WinFormsApp1\bin\Debug\net6.0-windows\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

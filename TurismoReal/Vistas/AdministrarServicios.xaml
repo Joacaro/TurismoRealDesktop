@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="AdministrarServicios" Height="450" Width="800">
     <Grid>
-        
+        <Button Content="Cerrar sesión" HorizontalAlignment="Left" Margin="672,44,0,0" VerticalAlignment="Top"/>
+        <Button Content="Añadir servicio" HorizontalAlignment="Left" Margin="116,115,0,0" VerticalAlignment="Top"/>
+        <Button Content="Modificar servicio" HorizontalAlignment="Left" Margin="298,115,0,0" VerticalAlignment="Top"/>
+        <Button Content="Eliminar servicio" HorizontalAlignment="Left" Margin="522,115,0,0" VerticalAlignment="Top"/>
+        <Button Content="Listar servicios" HorizontalAlignment="Left" Margin="134,217,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>

@@ -15,20 +15,43 @@ using System.Windows.Shapes;
 using TurismoReal.Vistas;
 using TurismoReal.Negocio;
 
+
 namespace TurismoReal
 {
     public partial class MainWindow : Window
     {
+        NegocioUsuario nu;
         public MainWindow()
         {
             InitializeComponent();
+            nu = new NegocioUsuario();
         }
-
+        
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Window ventana = new MenuAdministrador();
-            ventana.Show();
-            this.Close();
+            Window ventana = null;
+            try
+            {
+                switch (nu.Validar(usu.Text))
+                {
+                    case "ADMINISTRADOR":
+                        ventana = new MenuAdministrador();
+                        break;
+                    case "RECEPCIONISTA":
+                        ventana = new MenuFuncionario();
+                        break;
+                    default:
+                        break;
+                }
+                ventana.Show();
+                this.Close();
+            }
+            catch (Exception)
+            {
+                string message = "Usuario o Contraseña Incorrectos";
+                string title = "Error";
+                MessageBox.Show(message, title);
+            }
         }
     }
 }

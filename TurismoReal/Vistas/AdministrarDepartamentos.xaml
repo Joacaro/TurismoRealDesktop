@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="AdministrarDepartamentos" Height="450" Width="800">
     <Grid>
-        
+        <Button Content="Cerrar Sesión" HorizontalAlignment="Left" Margin="662,48,0,0" VerticalAlignment="Top"/>
+        <Button Content="Crear Departamento" HorizontalAlignment="Left" Margin="122,120,0,0" VerticalAlignment="Top"/>
+        <Button Content="Modificar departamento" HorizontalAlignment="Left" Margin="310,120,0,0" VerticalAlignment="Top"/>
+        <Button Content="Eliminar departamento" HorizontalAlignment="Left" Margin="567,120,0,0" VerticalAlignment="Top"/>
+        <Button Content="Listar departamentos" HorizontalAlignment="Left" Margin="122,217,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
