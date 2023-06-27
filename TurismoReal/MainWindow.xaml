@@ -7,12 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Button Grid.Column="1" Content="Listar Cliente" HorizontalAlignment="Left" Margin="400,179,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <Button Content="CrearCliente" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="220,179,0,0" VerticalAlignment="Top" Width="131" Click="Button_Click_1"/>
-
+        <Button Content="Iniciar" Margin="10,309,0,0" VerticalAlignment="Top" Height="50" Background="#FF9684E8" Click="Button_Click" HorizontalAlignment="Left" Width="272"/>
+        <TextBox Name="usu" HorizontalAlignment="Left" Height="46" Margin="10,131,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="272" FontSize="30"/>
+        <Label Content="Usuario" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="272"/>
+        <Label Content="Clave" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" Width="272"/>
+        <Label Content="login" HorizontalAlignment="Left" Margin="105,42,0,0" VerticalAlignment="Top" Height="53" Width="82" FontSize="30"/>
+        <PasswordBox Name="cla" HorizontalAlignment="Left" Margin="10,224,0,0" VerticalAlignment="Top" Width="272" Height="44" FontSize="30"/>
     </Grid>
 </Window>

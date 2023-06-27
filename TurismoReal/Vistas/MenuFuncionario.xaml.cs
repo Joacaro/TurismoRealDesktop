@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace TurismoReal.Vistas
 {
     /// <summary>
-    /// Lógica de interacción para Recepcionista.xaml
+    /// Lógica de interacción para MenuFuncionario.xaml
     /// </summary>
-    public partial class Recepcionista : Window
+    public partial class MenuFuncionario : Window
     {
-        public Recepcionista()
+        public MenuFuncionario()
         {
             InitializeComponent();
         }

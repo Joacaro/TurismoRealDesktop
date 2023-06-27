@@ -15,13 +15,20 @@ using System.Windows.Shapes;
 namespace TurismoReal.Vistas
 {
     /// <summary>
-    /// Lógica de interacción para Admininistrador.xaml
+    /// Lógica de interacción para MenuAdministrador.xaml
     /// </summary>
-    public partial class Admininistrador : Window
+    public partial class MenuAdministrador : Window
     {
-        public Admininistrador()
+        public MenuAdministrador()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window ventana = new AdministrarCliente();
+            ventana.Show();
+            this.Close();
         }
     }
 }

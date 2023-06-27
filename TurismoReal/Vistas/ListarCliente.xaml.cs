@@ -34,5 +34,12 @@ namespace TurismoReal.Vistas
             GridCli.DataContext = dt.DefaultView;
             GridCli.AutoGenerateColumns = true;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window admin = new AdministrarCliente();
+            admin.Show();
+            this.Close();
+        }
     }
 }

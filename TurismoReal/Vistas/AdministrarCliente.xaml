@@ -6,7 +6,15 @@
         xmlns:local="clr-namespace:TurismoReal.Vistas"
         mc:Ignorable="d"
         Title="AdministrarCliente" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Opacity="0.6">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Static/Images/pexels-chait-goli-1918291.jpg"/>
+        </Grid.Background>
+        <Button Content="Listar Cliente" HorizontalAlignment="Left" Margin="97,100,0,0" VerticalAlignment="Top" Height="46" Width="122" Click="Button_Click" Background="#FF1534E2" Foreground="White"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="301,95,0,0" VerticalAlignment="Top" Height="46" Width="129"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="527,90,0,0" VerticalAlignment="Top" Height="46" Width="132"/>
+        <Button Content="Volver" HorizontalAlignment="Left" Margin="673,30,0,0" VerticalAlignment="Top" Height="25" Width="82"/>
+        <Label Content="Turismo Real" HorizontalAlignment="Left" Margin="281,10,0,0" VerticalAlignment="Top" Height="45" Width="178" Background="#FF086B29" Foreground="White" FontSize="24"/>
+
     </Grid>
 </Window>
