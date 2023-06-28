@@ -23,7 +23,7 @@ namespace TurismoReal.Negocio
             db = new ModelContext();
             conn = (OracleConnection)db.Database.GetDbConnection();
         }
-        public string Validar(string user)
+        public string Validar(string user, string pass)
         {
             try
             {
@@ -39,10 +39,11 @@ namespace TurismoReal.Negocio
                 while (reader.Read())
                 {
                     string nombre_emp = reader.GetString(0); // Assuming nombre_emp is at index 0
-                    string nombre_tipo = reader.GetString(1); // Assuming nombre_tipo is at index 1
+                    string clave_emp = reader.GetString(1); // Assuming clave is at index 1
+                    string nombre_tipo = reader.GetString(2); // Assuming nombre_tipo is at index 2
 
                     // Use the retrieved values in an IF statement
-                    if (nombre_emp == user)
+                    if (nombre_emp == user && clave_emp == pass)
                     {
                         tipo = nombre_tipo;
                     }

@@ -1,11 +1,11 @@
-﻿<Window x:Class="TurismoReal.Vistas.AdministrarServicios"
+﻿<Window x:Class="TurismoReal.Vistas.AdministrarExtras"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TurismoReal.Vistas"
         mc:Ignorable="d"
-        Title="AdministrarServicios" Height="450" Width="800">
+        Title="AdministrarExtras" Height="450" Width="800">
     <Grid>
         <Button Content="Cerrar sesión" HorizontalAlignment="Left" Margin="672,44,0,0" VerticalAlignment="Top"/>
         <Button Content="Añadir servicio" HorizontalAlignment="Left" Margin="116,115,0,0" VerticalAlignment="Top"/>

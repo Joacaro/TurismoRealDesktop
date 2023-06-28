@@ -13,11 +13,11 @@ public partial class Edificio
 
     public string NombreAdm { get; set; } = null!;
 
-    public decimal CiudadIdCiudad { get; set; }
+    public decimal ComunaIdCom { get; set; }
 
     public virtual ICollection<Arriendo> Arriendos { get; set; } = new List<Arriendo>();
 
-    public virtual Ciudad CiudadIdCiudadNavigation { get; set; } = null!;
+    public virtual Comuna ComunaIdComNavigation { get; set; } = null!;
 
     public virtual ICollection<Departamento> Departamentos { get; set; } = new List<Departamento>();
 }

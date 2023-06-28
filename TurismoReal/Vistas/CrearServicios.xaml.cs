@@ -11,29 +11,41 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TurismoReal.Datos;
+using TurismoReal.Negocio;
 
 namespace TurismoReal.Vistas
 {
     /// <summary>
-    /// Lógica de interacción para AdministrarCliente.xaml
+    /// Lógica de interacción para CrearServicios.xaml
     /// </summary>
-    public partial class AdministrarCliente : Window
+    public partial class CrearServicios : Window
     {
-        public AdministrarCliente()
+        NegocioServicios ns;
+        public CrearServicios()
         {
             InitializeComponent();
+            ns = new NegocioServicios();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Window ventana = new ListarCliente();
-            ventana.Show();
-            this.Close();
+            TipoCompaniaServicio tpc = new TipoCompaniaServicio();
+            tpc.NombreComp = nombre.Text;
+            tpc.TelefonoComp = tel.Text;
+            tpc.CorreoComp = email.Text;
+            ns.InsertServicio(tpc);
+            Limpiar();
         }
-
+        private void Limpiar()
+        {
+            nombre.Text = "";
+            tel.Text = "";
+            email.Text = "";
+        }
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Window ventana = new MenuAdministrador();
+            Window ventana = new AdministrarDepartamentos();
             ventana.Show();
             this.Close();
         }

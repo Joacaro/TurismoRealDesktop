@@ -9,7 +9,9 @@ public partial class Comuna
 
     public string NombreCom { get; set; } = null!;
 
-    public decimal CodigoPostal { get; set; }
+    public decimal CiudadIdCiudad { get; set; }
 
-    public virtual ICollection<Ciudad> Ciudads { get; set; } = new List<Ciudad>();
+    public virtual Ciudad CiudadIdCiudadNavigation { get; set; } = null!;
+
+    public virtual ICollection<Edificio> Edificios { get; set; } = new List<Edificio>();
 }

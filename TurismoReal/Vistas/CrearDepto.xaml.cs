@@ -15,13 +15,20 @@ using System.Windows.Shapes;
 namespace TurismoReal.Vistas
 {
     /// <summary>
-    /// Lógica de interacción para AdministrarServicios.xaml
+    /// Lógica de interacción para CrearDepto.xaml
     /// </summary>
-    public partial class AdministrarServicios : Window
+    public partial class CrearDepto : Window
     {
-        public AdministrarServicios()
+        public CrearDepto()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window ventana = new AdministrarDepartamentos();
+            ventana.Show();
+            this.Close();
         }
     }
 }

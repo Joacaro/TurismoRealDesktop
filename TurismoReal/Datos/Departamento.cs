@@ -21,7 +21,11 @@ public partial class Departamento
 
     public decimal IdTipoComp { get; set; }
 
+    public decimal IdInv { get; set; }
+
     public virtual Edificio DireccionEdDeptoNavigation { get; set; } = null!;
+
+    public virtual Inventario IdInvNavigation { get; set; } = null!;
 
     public virtual Servicio? Servicio { get; set; }
 }

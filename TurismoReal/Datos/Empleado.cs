@@ -15,6 +15,10 @@ public partial class Empleado
 
     public string AmaternoEmp { get; set; } = null!;
 
+    public string Clave { get; set; } = null!;
+
+    public string IsActive { get; set; } = null!;
+
     public string Telefono { get; set; } = null!;
 
     public decimal IdTipoEmpId { get; set; }

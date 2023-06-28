@@ -26,25 +26,32 @@ namespace TurismoReal
             InitializeComponent();
             nu = new NegocioUsuario();
         }
-        
+        private void openWindow(Window ventana)
+        {
+            ventana.Show();
+            this.Close();
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Window ventana = null;
             try
             {
-                switch (nu.Validar(usu.Text))
+                switch (nu.Validar(usu.Text, cla.Password))
                 {
                     case "ADMINISTRADOR":
                         ventana = new MenuAdministrador();
+                        this.openWindow(ventana);
                         break;
                     case "RECEPCIONISTA":
                         ventana = new MenuFuncionario();
+                        this.openWindow(ventana);
                         break;
                     default:
+                        string message = "Usuario o Contraseña Incorrectos";
+                        string title = "Error";
+                        MessageBox.Show(message, title);
                         break;
                 }
-                ventana.Show();
-                this.Close();
             }
             catch (Exception)
             {

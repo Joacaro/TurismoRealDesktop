@@ -9,9 +9,9 @@ public partial class Ciudad
 
     public string NombreCiudad { get; set; } = null!;
 
-    public decimal ComunaIdComuna { get; set; }
+    public decimal RegionIdReg { get; set; }
 
-    public virtual Comuna ComunaIdComunaNavigation { get; set; } = null!;
+    public virtual ICollection<Comuna> Comunas { get; set; } = new List<Comuna>();
 
-    public virtual ICollection<Edificio> Edificios { get; set; } = new List<Edificio>();
+    public virtual Region RegionIdRegNavigation { get; set; } = null!;
 }
