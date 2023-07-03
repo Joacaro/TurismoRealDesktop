@@ -48,6 +48,7 @@ namespace TurismoReal
                     default:
                         string message = "Usuario o Contraseña Incorrectos";
                         string title = "Error";
+                        message += nu.Validar(usu.Text, cla.Password);
                         MessageBox.Show(message, title);
                         break;
                 }
@@ -56,6 +57,7 @@ namespace TurismoReal
             {
                 string message = "Usuario o Contraseña Incorrectos";
                 string title = "Error";
+                message += nu.Validar(usu.Text, cla.Password);
                 MessageBox.Show(message, title);
             }
         }

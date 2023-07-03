@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="CrearInventario" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="../Images/2.jpg" Opacity="0.6"/>
+        </Grid.Background>
         <Label Content="Inventario" HorizontalAlignment="Left" Margin="280,46,0,0" VerticalAlignment="Top" Width="213"/>
         <TextBox x:Name="txtName"  HorizontalAlignment="Left" Margin="95,102,0,0" TextWrapping="Wrap" Text="Nombre_Item" VerticalAlignment="Top" Width="211" Height="35"/>
         <TextBox x:Name="txtStock" HorizontalAlignment="Left" Margin="95,173,0,0" TextWrapping="Wrap" Text="Stock" VerticalAlignment="Top" Width="211" Height="33"/>

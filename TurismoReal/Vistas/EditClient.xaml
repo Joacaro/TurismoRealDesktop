@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="EditClient" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="../Images/2.jpg" Opacity="0.6"/>
+        </Grid.Background>
         <TextBox x:Name="nombre" HorizontalAlignment="Left" Margin="89,133,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="149" Height="30"/>
         <TextBox x:Name="apellido" HorizontalAlignment="Left" Margin="89,187,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="149" Height="30"/>
         <Button Content="Editar" HorizontalAlignment="Left" Margin="164,247,0,0" VerticalAlignment="Top"  Height="48" Width="190" Click="Button_Click"  />

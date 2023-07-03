@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="CrearServicios" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="../Images/2.jpg" Opacity="0.6"/>
+        </Grid.Background>
         <Button Content="Volver" HorizontalAlignment="Left" Margin="690,47,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
         <Label Content="Nombre" HorizontalAlignment="Left" Margin="108,107,0,0" VerticalAlignment="Top" Height="25" Width="126"/>
         <Label Content="Telefono" HorizontalAlignment="Left" Margin="313,107,0,0" VerticalAlignment="Top" Height="25" Width="98"/>

@@ -30,5 +30,12 @@ namespace TurismoReal.Vistas
             ventana.Show();
             this.Close();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Window ventana = new MenuAdministrador();
+            ventana.Show();
+            this.Close();
+        }
     }
 }

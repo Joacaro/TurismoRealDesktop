@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="ListarCliente" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="../Images/2.jpg" Opacity="0.6"/>
+        </Grid.Background>
         <DataGrid Name ="GridCli" Height="154" Width="auto" ItemsSource="{Binding}" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,199,0,0" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeRows="False"/>
         <Button Content="Volver" HorizontalAlignment="Left" Margin="668,76,0,0" VerticalAlignment="Top" Height="24" Width="65" Click="Button_Click"/>
     </Grid>
