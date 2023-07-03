@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace TurismoReal.Vistas
 {
     /// <summary>
-    /// Lógica de interacción para AdministrarInventario.xaml
+    /// Lógica de interacción para EditServicio.xaml
     /// </summary>
-    public partial class AdministrarInventario : Window
+    public partial class EditServicio : Window
     {
-        public AdministrarInventario()
+        public EditServicio()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Window ventana = new CrearInventario();
-            ventana.Show();
-            this.Close();
         }
     }
 }

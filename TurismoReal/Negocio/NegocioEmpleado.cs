@@ -131,5 +131,9 @@ namespace TurismoReal.Negocio
             }
             return dt;
         }
+        public List<Empleado> ObtenerAdmin()
+        {
+            return db.Empleados.Where(x => x.IdTipoEmpId == 1).ToList();
+        }
     }
 }

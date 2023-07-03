@@ -8,6 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="images\1.jpg" />
+    <None Remove="images\2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.4.4" />
     <PackageReference Include="MahApps.Metro" Version="2.4.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.8" />
@@ -22,6 +27,11 @@
     <Reference Include="Oracle.ManagedDataAccess">
       <HintPath>..\..\..\..\Desktop\Titulo\WinFormsApp1\bin\Debug\net6.0-windows\Oracle.ManagedDataAccess.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\1.jpg" />
+    <Resource Include="images\2.jpg" />
   </ItemGroup>
 
 </Project>

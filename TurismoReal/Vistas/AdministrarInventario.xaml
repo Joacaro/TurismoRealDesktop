@@ -7,8 +7,11 @@
         mc:Ignorable="d"
         Title="AdministrarInventario" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="../Images/2.jpg" Opacity="0.6"/>
+        </Grid.Background>
         <Button Content="Cerrar sesión" HorizontalAlignment="Left" Margin="669,69,0,0" VerticalAlignment="Top"/>
-        <Button Content="Añadir elemento" HorizontalAlignment="Left" Margin="131,131,0,0" VerticalAlignment="Top"/>
+        <Button Content="Añadir elemento" HorizontalAlignment="Left" Margin="131,131,0,0" VerticalAlignment="Top" Click="Button_Click"/>
         <Button Content="Modificar elemento" HorizontalAlignment="Left" Margin="316,131,0,0" VerticalAlignment="Top"/>
         <Button Content="Eliminar elemento" HorizontalAlignment="Left" Margin="510,131,0,0" VerticalAlignment="Top"/>
         <Button Content="Listar Inventario" HorizontalAlignment="Left" Margin="131,244,0,0" VerticalAlignment="Top"/>

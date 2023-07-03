@@ -15,7 +15,6 @@ using System.Windows.Shapes;
 using TurismoReal.Vistas;
 using TurismoReal.Negocio;
 
-
 namespace TurismoReal
 {
     public partial class MainWindow : Window

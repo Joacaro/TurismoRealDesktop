@@ -7,14 +7,17 @@
         mc:Ignorable="d"
         Title="AdministrarDepartamentos" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="../Images/2.jpg" Opacity="0.6"/>
+        </Grid.Background>
         <Button Content="Volver" HorizontalAlignment="Left" Margin="662,48,0,0" VerticalAlignment="Top" Click="Button_Click"/>
         <Button Content="Crear Departamento" HorizontalAlignment="Left" Margin="509,120,0,0" VerticalAlignment="Top" Click="Button_Click_1" Width="133" Height="31"/>
         <Button Content="Modificar departamento" HorizontalAlignment="Left" Margin="509,210,0,0" VerticalAlignment="Top" Height="33"/>
         <Button Content="Listar departamentos" HorizontalAlignment="Left" Margin="509,294,0,0" VerticalAlignment="Top" Width="133" Height="31"/>
         <Label Content="Departamentos" HorizontalAlignment="Left" Height="38" Margin="509,87,0,0" VerticalAlignment="Top" Width="133"/>
-        <Button Content="Crear Edificio" HorizontalAlignment="Left" Margin="314,120,0,0" VerticalAlignment="Top" Height="31" Width="109"/>
+        <Button Content="Crear Edificio" HorizontalAlignment="Left" Margin="314,120,0,0" VerticalAlignment="Top" Height="31" Width="109" Click="Button_Click_5"/>
         <Button Content="Crear Servicio" HorizontalAlignment="Left" Margin="118,120,0,0" VerticalAlignment="Top" Width="117" Height="31" Click="Button_Click_3"/>
-        <Button Content="Modificar Servicio" HorizontalAlignment="Left" Margin="118,210,0,0" VerticalAlignment="Top" Height="33" Width="117"/>
+        <Button Content="Modificar Servicio" HorizontalAlignment="Left" Margin="118,210,0,0" VerticalAlignment="Top" Height="33" Width="117" Click="Button_Click_4"/>
         <Button Content="Modificar Edificio" HorizontalAlignment="Left" Margin="314,210,0,0" VerticalAlignment="Top" Height="33" Width="109"/>
         <Button Content="Listar Servicios" HorizontalAlignment="Left" Margin="118,294,0,0" VerticalAlignment="Top" Width="117" Click="Button_Click_2" Height="34"/>
         <Button Content="Listar Edificios" HorizontalAlignment="Left" Margin="314,294,0,0" VerticalAlignment="Top" Height="34" Width="106"/>

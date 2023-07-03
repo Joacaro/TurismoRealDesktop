@@ -40,12 +40,28 @@ namespace TurismoReal.Vistas
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
+            Window ventana = new ListServicio();
+            ventana.Show();
+            this.Close();
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             Window ventana = new CrearServicios();
+            ventana.Show();
+            this.Close();
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            Window ventana = new EditServicio();
+            ventana.Show();
+            this.Close();
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            Window ventana = new CrearEdificio();
             ventana.Show();
             this.Close();
         }

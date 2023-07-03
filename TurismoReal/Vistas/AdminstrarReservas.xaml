@@ -7,10 +7,15 @@
         mc:Ignorable="d"
         Title="AdminstrarReservas" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="../Images/2.jpg" Opacity="0.6"/>
+        </Grid.Background>
         <Button Content="Volver" HorizontalAlignment="Left" Margin="638,63,0,0" VerticalAlignment="Top"/>
-        <Button Content="Generar reporte" HorizontalAlignment="Center" Margin="0,274,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="356,113,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Generar reporte" HorizontalAlignment="Center" Margin="0,324,0,0" VerticalAlignment="Top" Height="51" Width="179"/>
+        <ComboBox HorizontalAlignment="Left" Margin="329,117,0,0" VerticalAlignment="Top" Width="120"/>
         <Label Content="Fecha" HorizontalAlignment="Left" Margin="369,60,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="329,217,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Ciudad" HorizontalAlignment="Left" Margin="369,177,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TurismoReal.Negocio;
 
 namespace TurismoReal.Vistas
 {
@@ -19,9 +20,15 @@ namespace TurismoReal.Vistas
     /// </summary>
     public partial class CrearDepto : Window
     {
+        NegocioEdificio ne;
+        NegocioDeptos nd;
         public CrearDepto()
         {
             InitializeComponent();
+            ne = new NegocioEdificio();
+            nd = new NegocioDeptos();
+            LlenarEdificio();
+            Limpiar();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -30,5 +37,19 @@ namespace TurismoReal.Vistas
             ventana.Show();
             this.Close();
         }
+
+        private void LlenarEdificio()
+        {
+            List<string> listado = ne.ObtenerEdificio().Select(x => x.DireccionEd).ToList(); ;
+            cmbEd.ItemsSource = listado;
+        }
+
+        private void Limpiar()
+        {
+            txtBan.Text = "";
+            txtNumero.Text = "";
+            txtHab.Text = "";
+        }
+
     }
 }

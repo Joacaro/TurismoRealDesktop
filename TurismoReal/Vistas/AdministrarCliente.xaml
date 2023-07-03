@@ -7,11 +7,13 @@
         mc:Ignorable="d"
         Title="AdministrarCliente" Height="450" Width="800">
     <Grid Opacity="0.6">
-        <Button Content="Listar Cliente" HorizontalAlignment="Left" Margin="97,100,0,0" VerticalAlignment="Top" Height="46" Width="122" Click="Button_Click" Background="#FF1534E2" Foreground="White"/>
-        <Button Content="Crear Cliente" HorizontalAlignment="Left" Margin="301,95,0,0" VerticalAlignment="Top" Height="46" Width="129"/>
-        <Button Content="Modificar Cliente" HorizontalAlignment="Left" Margin="527,90,0,0" VerticalAlignment="Top" Height="46" Width="132"/>
-        <Button Content="Volver" HorizontalAlignment="Left" Margin="673,30,0,0" VerticalAlignment="Top" Height="25" Width="82" Click="Button_Click_1"/>
-        <Label Content="Turismo Real" HorizontalAlignment="Left" Margin="281,10,0,0" VerticalAlignment="Top" Height="45" Width="178" Background="#FF086B29" Foreground="White" FontSize="24"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="../Images/2.jpg" Opacity="0.6"/>
+        </Grid.Background>
+        <Button Content="Listar Cliente" HorizontalAlignment="Left" Margin="195,113,0,0" VerticalAlignment="Top" Height="46" Width="122" Click="Button_Click" Background="#FF1534E2" Foreground="White" FontWeight="Bold"/>
+        <Button Content="Modificar Cliente" HorizontalAlignment="Left" Margin="512,108,0,0" VerticalAlignment="Top" Height="46" Width="132" Background="#FFDDDDDD" BorderBrush="#FF2244CA" Foreground="Black" FontWeight="Bold"/>
+        <Button Content="Volver" HorizontalAlignment="Left" Margin="673,30,0,0" VerticalAlignment="Top" Height="25" Width="82" Click="Button_Click_1" FontWeight="Bold"/>
+        <Label Content="Turismo Real" HorizontalAlignment="Center" Margin="0,17,0,0" VerticalAlignment="Top" Height="45" Width="178" Background="#FF086B29" Foreground="White" FontSize="24"/>
 
     </Grid>
 </Window>

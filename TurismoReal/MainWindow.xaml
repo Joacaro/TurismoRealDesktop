@@ -5,13 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TurismoReal"
         mc:Ignorable="d"
-        Title="Login" Height="450" Width="800">
+        Title="Turismo Real Login" Height="450" Width="800">
     <Grid>
-        <Button Content="Iniciar Sesión" Margin="245,307,0,0" VerticalAlignment="Top" Height="50" Background="#FF9684E8" Click="Button_Click" HorizontalAlignment="Left" Width="272"/>
-        <TextBox Name="usu" HorizontalAlignment="Left" Height="46" Margin="245,131,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="272" FontSize="30"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="images/1.jpg"/>
+        </Grid.Background>
+        <Rectangle HorizontalAlignment="Left" Height="358" Margin="202,0,0,0" Stroke="Black" VerticalAlignment="Center" Width="358" Fill="#FFFBFBFB"/>
+        <TextBox x:Name="usu" HorizontalAlignment="Left" Height="46" Margin="245,131,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="272" FontSize="30"/>
+        <Label Content="Login" HorizontalAlignment="Left" Margin="308,42,0,0" VerticalAlignment="Top" Height="53" Width="82" FontSize="30"/>
         <Label Content="Usuario" HorizontalAlignment="Left" Margin="213,100,0,0" VerticalAlignment="Top" Width="272"/>
         <Label Content="Clave" HorizontalAlignment="Left" Margin="213,186,0,0" VerticalAlignment="Top" Width="272"/>
-        <Label Content="Login" HorizontalAlignment="Left" Margin="308,42,0,0" VerticalAlignment="Top" Height="53" Width="82" FontSize="30"/>
-        <PasswordBox Name="cla" HorizontalAlignment="Left" Margin="245,217,0,0" VerticalAlignment="Top" Width="272" Height="44" FontSize="30"/>
+        <Button Content="Iniciar Sesión" Margin="245,307,0,0" VerticalAlignment="Top" Height="50" Background="#FF9684E8" Click="Button_Click" HorizontalAlignment="Left" Width="272"/>
+        <PasswordBox x:Name="cla" HorizontalAlignment="Left" Margin="245,217,0,0" VerticalAlignment="Top" Width="272" Height="44" FontSize="30"/>
     </Grid>
 </Window>

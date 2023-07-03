@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="AdministrarExtras" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="../Images/2.jpg" Opacity="0.6"/>
+        </Grid.Background>
         <Button Content="Cerrar sesión" HorizontalAlignment="Left" Margin="672,44,0,0" VerticalAlignment="Top"/>
         <Button Content="Añadir servicio" HorizontalAlignment="Left" Margin="116,115,0,0" VerticalAlignment="Top"/>
         <Button Content="Modificar servicio" HorizontalAlignment="Left" Margin="298,115,0,0" VerticalAlignment="Top"/>

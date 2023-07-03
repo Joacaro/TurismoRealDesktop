@@ -132,9 +132,6 @@ namespace TurismoReal.Negocio
             }
             return dt;
         }
-        public List<Cliente> GetCliente()
-        {
-            return db.Clientes.Where(x => x.IsActive == 1).ToList();
-        }
+        
     }
 }
