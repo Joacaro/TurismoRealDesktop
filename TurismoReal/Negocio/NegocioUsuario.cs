@@ -31,11 +31,11 @@ namespace TurismoReal.Negocio
                 string sql = "SP_Validar_Emp";
                 OracleCommand oracleCommand = new OracleCommand(sql, conn);
                 oracleCommand.CommandType = CommandType.StoredProcedure;
-                //parametros
-                OracleParameter param1 = oracleCommand.Parameters.Add("CLIENTE_CURSOR", OracleDbType.RefCursor);
-                param1.Direction = ParameterDirection.Output;
+                //parametros               
+                oracleCommand.Parameters.Add("puser", OracleDbType.Varchar2).Value = user;
+                oracleCommand.Parameters.Add("cursor_val", OracleDbType.RefCursor).Direction = ParameterDirection.Output;
                 oracleCommand.ExecuteNonQuery();
-                OracleDataReader reader = ((OracleRefCursor)param1.Value).GetDataReader();
+                OracleDataReader reader = ((OracleRefCursor)oracleCommand.Parameters["cursor_val"].Value).GetDataReader();
                 while (reader.Read())
                 {
                     string nombre_emp = reader.GetString(0); // Assuming nombre_emp is at index 0
