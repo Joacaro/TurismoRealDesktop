@@ -47,5 +47,37 @@ namespace TurismoReal.Negocio
                 conn.Close();
             }
         }
+        public DataTable ListServicios()
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                conn.Open();
+                string query = "SP_Service_List";
+                OracleCommand oracleCommand = new OracleCommand(query, conn);
+                oracleCommand.CommandType = CommandType.StoredProcedure;
+                OracleParameter param1 = oracleCommand.Parameters.Add("cursor_cli", OracleDbType.RefCursor);
+                param1.Direction = ParameterDirection.Output;
+                oracleCommand.ExecuteNonQuery();
+                OracleDataReader reader = ((OracleRefCursor)param1.Value).GetDataReader();
+                dt.Load(reader);
+                reader.Close();
+                //Liberar recursos
+                reader.Dispose();
+                param1.Dispose();
+                oracleCommand.Dispose();
+            }
+            catch (Exception ex)
+            {
+                string message = ex.ToString();
+                string title = "Error";
+                MessageBox.Show(message, title);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return dt;
+        }
     }
 }

@@ -20,7 +20,7 @@
         <Button Content="Modificar Servicio" HorizontalAlignment="Left" Margin="118,210,0,0" VerticalAlignment="Top" Height="33" Width="117" Click="Button_Click_4"/>
         <Button Content="Modificar Edificio" HorizontalAlignment="Left" Margin="314,210,0,0" VerticalAlignment="Top" Height="33" Width="109"/>
         <Button Content="Listar Servicios" HorizontalAlignment="Left" Margin="118,294,0,0" VerticalAlignment="Top" Width="117" Click="Button_Click_2" Height="34"/>
-        <Button Content="Listar Edificios" HorizontalAlignment="Left" Margin="314,294,0,0" VerticalAlignment="Top" Height="34" Width="106"/>
+        <Button Content="Listar Edificios" HorizontalAlignment="Left" Margin="314,294,0,0" VerticalAlignment="Top" Height="34" Width="106" Click="Button_Click_6"/>
         <Label Content="Servicios" HorizontalAlignment="Left" Margin="108,87,0,0" VerticalAlignment="Top" Width="127"/>
         <Label Content="Edificio" HorizontalAlignment="Left" Margin="314,87,0,0" VerticalAlignment="Top" Width="109"/>
 

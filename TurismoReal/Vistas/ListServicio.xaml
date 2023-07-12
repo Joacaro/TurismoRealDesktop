@@ -6,7 +6,12 @@
         xmlns:local="clr-namespace:TurismoReal.Vistas"
         mc:Ignorable="d"
         Title="ListServicio" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Opacity="0.6">
+        <Grid.Background>
+            <ImageBrush ImageSource="/images/2.jpg"/>
+        </Grid.Background>
+        <Button Content="Volver" HorizontalAlignment="Left" Margin="654,70,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <DataGrid x:Name ="GridServ" Height="154" Width="auto" ItemsSource="{Binding}" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,199,0,0" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeRows="False"/>
+
     </Grid>
 </Window>

@@ -10,11 +10,13 @@
         <Grid.Background>
             <ImageBrush ImageSource="../Images/2.jpg" Opacity="0.6"/>
         </Grid.Background>
-        <Button Content="Cerrar sesión" HorizontalAlignment="Left" Margin="672,44,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <Button Content="Añadir servicio" HorizontalAlignment="Left" Margin="116,115,0,0" VerticalAlignment="Top"/>
-        <Button Content="Modificar servicio" HorizontalAlignment="Left" Margin="298,115,0,0" VerticalAlignment="Top"/>
-        <Button Content="Eliminar servicio" HorizontalAlignment="Left" Margin="522,115,0,0" VerticalAlignment="Top"/>
-        <Button Content="Listar servicios" HorizontalAlignment="Left" Margin="134,217,0,0" VerticalAlignment="Top"/>
+        <Button Content="Volver" HorizontalAlignment="Left" Margin="672,44,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Crear Vehículo" HorizontalAlignment="Left" Margin="151,129,0,0" VerticalAlignment="Top" Height="43" Width="94"/>
+        <Button Content="Crear Transportista" HorizontalAlignment="Left" Margin="326,129,0,0" VerticalAlignment="Top" Height="43" Width="130"/>
+        <Button Content="Modificar Vehiculo" HorizontalAlignment="Left" Margin="161,200,0,0" VerticalAlignment="Top"/>
+        <Button Content="Modificar Transportista" HorizontalAlignment="Left" Margin="344,200,0,0" VerticalAlignment="Top"/>
+        <Button Content="Listar Vehículo" HorizontalAlignment="Left" Margin="161,246,0,0" VerticalAlignment="Top"/>
+        <Button Content="Listar Transportista" HorizontalAlignment="Left" Margin="355,256,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

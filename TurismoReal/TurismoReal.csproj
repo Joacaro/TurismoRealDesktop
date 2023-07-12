@@ -10,12 +10,16 @@
   <ItemGroup>
     <None Remove="images\1.jpg" />
     <None Remove="images\2.jpg" />
+    <None Remove="images\ACLI.png" />
+    <None Remove="images\lcli.png" />
+    <None Remove="images\LCO.png" />
+    <None Remove="images\LCOR.png" />
     <None Remove="images\rec.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.4.4" />
-    <PackageReference Include="MahApps.Metro" Version="2.4.9" />
+    <PackageReference Include="MahApps.Metro" Version="2.4.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
       <PrivateAssets>all</PrivateAssets>
@@ -34,6 +38,10 @@
   <ItemGroup>
     <Resource Include="images\1.jpg" />
     <Resource Include="images\2.jpg" />
+    <Resource Include="images\ACLI.png" />
+    <Resource Include="images\lcli.png" />
+    <Resource Include="images\LCO.png" />
+    <Resource Include="images\LCOR.png" />
     <Resource Include="images\rec.jpg" />
   </ItemGroup>
 

@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace TurismoReal.Vistas
 {
     /// <summary>
-    /// Lógica de interacción para BorrarEmpleado.xaml
+    /// Lógica de interacción para ListarDepto.xaml
     /// </summary>
-    public partial class BorrarEmpleado : Window
+    public partial class ListarDepto : Window
     {
-        public BorrarEmpleado()
+        public ListarDepto()
         {
             InitializeComponent();
         }

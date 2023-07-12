@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,21 @@ namespace TurismoReal.Vistas
         public ListServicio()
         {
             InitializeComponent();
+            ns = new NegocioServicios();
+            LoadGrid();
+        }
+        public void LoadGrid()
+        {
+            DataTable dt = ns.ListServicios();
+            GridServ.DataContext = dt.DefaultView;
+            GridServ.AutoGenerateColumns = true;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window ventana = new AdministrarDepartamentos();
+            ventana.Show();
+            this.Close();
         }
     }
 }
